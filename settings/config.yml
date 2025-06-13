@@ -1,0 +1,27 @@
+data: 
+  wikitq: data/datasets/wikitq/test.json
+  tabfact: data/datasets/tab_fact/small_test.jsonl
+  
+logfile: "app.log"
+outputfile: "output.csv"
+base_url:
+  llama8b: "http://localhost:8000/v1"
+  gpt-4o-mini: ""
+  gpt-3.5-turbo: ""
+model:
+  llama8b: "meta-llama/Meta-Llama-3-8B-Instruct"
+  gpt-4o-mini: "gpt-4o-mini"
+  gpt-3.5-turbo: "gpt-3.5-turbo-1106"
+
+task:
+  wikitq: "table question answering. Please return the answer only."
+  tabfact: "fact verification. Please response true as the answer if the statement is True, false if the statement is False."
+
+graph:
+  recursion_limit: 100
+
+params:
+  batch_size: 1
+  default_temperature: 0
+  high_temperature: 0
+  search_temperature: 0.4

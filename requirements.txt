@@ -1,0 +1,9 @@
+datasets==3.0.2
+langchain==0.3.4
+langchain-community==0.3.3
+langchain-core
+langchain-openai==0.2.3
+langgraph==0.2.39
+# pygraphviz==1.14
+python-dotenv==1.0.1
+pandas==2.2.3
